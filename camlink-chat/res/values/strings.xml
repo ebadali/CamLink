@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Camlink</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Register Screen Strings.-->
+    <string name="fname">User Name</string>
+    <string name="lname">Last Name</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="email">E-Mail or User Name</string>
+    <string name="onlyemail">E-Mail</string>
+    <string name="pass">Password</string>
+    <string name="entergroupname">Group Name</string>
+
+    <string name="cpass">Confirm Password</string>
+    <string name="error1">you must be 18 years old to use this app</string>
+    <string name="error2">Passwords must be between 8-64 characters long\nand contain a number, uppercase letter,
+        and lower case letter</string>
+    <string name="iagree">I agree to the</string>
+    <string name="term">Terms of Conditions and Privacy Policy</string>
+    <string name="register">Register</string>
+    <string name="already_reg">Already Registered? Log in</string>
+
+    <!-- Login Screen Strings.-->
+    <string name="stay_login">Stay logged in for 30 days</string>
+    <string name="login">Log In</string>
+    <string name="signup"><u>Sign up</u></string>
+    <string name="forgot"><u>Forgot your password</u></string>
+    <string name="login_error">You have 4 out of 5 attempts to login left.\nAfterwards, you\'ll be locked out for 24 hours.\nContact Client Services department at\n(877)505-7374 if ealier access is needed.</string>
+    <!-- LoginForgot and Enter Pin Screen Strings.-->
+    <string name="send">Send</string>
+
+    <string name="new_pass">New password</string>
+    <string name="confirm_pass">Confirm password</string>
+    <string name="save">Save</string>
+    <string name="pass_mustbe">Passwords must be between 8-64\ncharacters long and contain a number, upper\ncase letter, and lower case letter.</string>
+
+    <string name="back_to_login"><u>Back to Login</u></string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enter_pin">Enter Pin</string>
+    <string name="pin_dsnt_exist">PIN does not exist or it has expired</string>
+    <string name="i_have_a_pin"><u>I have a PIN</u></string>
+    <string name="enter_pin_we_sent">Please enter the PIN we sent to your email.</string>
+    <string name="i_need_new_pin"><u>I need a new PIN</u></string>
+    <string name="loginforgot_error">Invalid email, please check your\nemail and try again</string>
+    <!-- Health Profile-->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <!-- Health Profile, Edit Name-->
+    <string name="tellmeurname">Tell me your name</string>
+    <string name="dave">Dave</string>
+    <string name="smith">Smith</string>
+    <string name="dave_smith">Dave Smith</string>
+    <!-- Health Profile, Edit Birthday-->
+    <string name="tellmeurbirthday">What\'s your birthday?</string>
+    <string name="brthday">May 15,1989</string>
+    <!-- Health Profile, Edit Height-->
+    <string name="howtallru">How tall are you?</string>
+    <string name="ft">ft</string>
+    <string name="inch">in</string>
+
+    <!-- Health Profile, Edit weigh-->
+    <string name="howmuchuweigh">How much do you weigh?</string>
+
+    <!-- Health Profile, Edit gender-->
+    <string name="whtsurgender">What\'s your gender?</string>
+
+    <!-- Health Profile, Edit daily activity-->
+
+    <string name="dailyctivity">How active are you?</string>
+    <string name="healthprof_howactiveareu_1">Sedentary\nlittle or no excericse</string>
+    <string name="healthprof_howactiveareu_2">Lightly Active\nlight exercise</string>
+    <string name="healthprof_howactiveareu_3">How active are you?</string>
+    <string name="healthprof_howactiveareu_4">How active are you?</string>
+    <string name="healthprof_howactiveareu_5">How active are you?</string>
+
+    <!-- Health Profile, Edit alcohol-->
+    <string name="howmuchudrink">How much do you drink?</string>
+    <string name="drinksperday">drinks per day?</string>
+
+    <!-- Health Profile, Edit smoke-->
+    <string name="dousmoke">Do you smoke?</string>
+
+    <!-- Health Profile, Edit Goal-->
+    <string name="whtsurgoal">What\'s your goal?</string>
+
+    <!-- Health Profile, Edit diabetes-->
+    <string name="douhvdiabetes">Do you have diabetes?</string>
+
+
+    <!-- Health Profile, Edit cholesterol-->
+    <string name="douhvcholesterol">Do you have high cholesterol?</string>
+
+
+    <!-- Health Profile, Edit allergies-->
+    <string name="whtrurallergies">What are you\nallergic to?</string>
+
+
+    <!-- Health Profile, Edit Ethnicity-->
+    <string name="htsurethnicity">What\'s your ethnicity?</string>
+
+    <!-- Health Profile, Edit Ethnicity-->
+    <string name="diettype">Which best describes your diet?</string>
+    <string name="indicatepref">Please indicate your diet preferences?</string>
+
+
+    <!--  Tool bars-->
+    <string name="healthprof_topbar">Health Profile</string>
+    <string name="healthprof_bottombar">Remove this answer</string>
+
+
+    <!--  Health Data Profile-->
+    <string name="google_fit">Google Fit</string>
+    <string name="fitbit">Fitbit</string>
+    <string name="mangaehealthheadingtext">Connecting health apps will\nhelp me give you more relevant\ninformation.</string>
+
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+    <!--  Account Settings-->
+    <string name="push_notif">Push Notifications</string>
+    <string name="followup">Follow up on prior recommendations</string>
+    <string name="whenome">When OME has something to tell me</string>
+    <string name="whennewfeature">When new features are available</string>
+
+    <string name="gps">GPS</string>
+    <string name="showexpert">Show expert\nlevel content.</string>
+    <string name="radio_on">On</string>
+    <string name="radio_off">Off</string>
+
+    <string name="btn_cancle">Cancel</string>
+
+    <string name="ques_email">thisisalongemailadres@territory ...</string>
+    <string name="ques_sec">Security Question</string>
+    <string name="ques_resetpass">Reset Password</string>
+    <string name="ques_closeacc">Close Account</string>
+
+    <string name="sec_ques">Your security question and\nanswer is used by Client\nServices to verify your identity\nduring support calls.</string>
+
+    <string name="ques_text_email_heading">Change E-mail</string>
+    <string name="ques_text_email_email">Current e-mail is\nthisisalongemailadres@territory ...</string>
+    <string name="ques_text_email_ed_newemail">New e-mail</string>
+    <string name="ques_text_email_ed_confirmemail">Confirm e-mail</string>
+    <string name="ques_text_email_btn">Save</string>
+
+
+    <string name="ques_text_resetpass_heading">Reset Password</string>
+    <string name="ques_text_resetpass_text">Please enter your password</string>
+    <string name="ques_text_resetpass_ed">New Password</string>
+    <string name="ques_text_resetpass_ed_cnfrm">Confirm New Password</string>
+    <string name="ques_text_resetpass_ed_typein">Please type in your\nnew password</string>
+
+    <string name="ques_text_chngsecques_heading">Change Security Question</string>
+    <string name="ques_text_chngsecques_text">Please enter your password</string>
+    <string name="ques_text_chngsecques_ed">Password</string>
+    <string name="ques_text_chngsecques_btn">Enter</string>
+    <string name="ques_text_chngsecques_ed_one">Enter a security question</string>
+    <string name="ques_text_chngsecques_ed_two">Enterthe answer</string>
+    <string name="ques_text_chngsecques_heading_two">Your security question and answer is\nused by Client Services to verify your\nidentity during support calls.</string>
+
+
+    <string name="ques_text_closeac_text">Closing an account will disable the\naccount from any future\nlogin and is irrevocable.</string>
+    <string name="ques_text_closeac_btn">Close Account</string>
+
+    <string name="account_settings">Account Settings</string>
+
+    <!--Menu Items-->
+    <string name="menu_name">Dave Smith</string>
+    <string name="menu_notif">Notifications</string>
+    <string name="menu_fav">Favorites</string>
+    <string name="menu_healthprof">Health Profile</string>
+    <string name="menu_healthinputs">Health Inputs</string>
+    <string name="menu_genetics">Genetics Profile</string>
+    <string name="menu_accsetting">Account Settings</string>
+    <string name="menu_about">About Ome</string>
+    <string name="menu_privacyterm">Privacy and Terms</string>
+    <string name="menu_logout">Log Out</string>
+
+
+    <!--Genetic Profile-->
+    <string name="geneticprof_connectreports">Connected Reports</string>
+    <string name="geneticprof_connectareport">Connect a Report</string>
+    <string name="geneticprof_purchase_more">Buy More Reports</string>
+    <string name="geneticprof_pathway_fit">Pathway Fit</string>
+    <string name="geneticprof_accessionnumber">Accession Number (e.g.: D999999)</string>
+    <string name="geneticprof_accessionnumber_error">The accession number you provide is\nalready linked to another account</string>
+    <string name="long_loremlipsum1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</string>
+    <string name="long_loremlipsum2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</string>
+    <string name="long_loremlipsum_price">Price: $99</string>
+    <string name="small_loremlipsum">Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit.\nAliquam lectus.</string>
+
+
+    <string name="purchase">Purchase</string>
+    <string name="geneticprof_allfields">All fields are required</string>
+    <string name="geneticprof_thereportsyouarepurchasing">The report you are purchasing\ncan only be used for you.</string>
+    <string name="next">Next</string>
+    <string name="saveaddress">Save address</string>
+    <string name="cancleorder">cancle order</string>
+    <string name="address1">Address 1</string>
+    <string name="address2">Address 2</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="postalcode">Postal code</string>
+    <string name="country">Country</string>
+    <string name="phnnumb">Phone Number</string>
+    <string name="pathwayfitreport">Pathway Fit@ Report</string>
+    <string name="nintynine">$99</string>
+    <string name="grandtotal">Grand Total</string>
+    <string name="submit">Submit</string>
+    <string name="paypal">Paypal</string>
+    <string name="creditcard">Creditcard</string>
+    <string name="creditcard2">Credit card number</string>
+
+    <string name="paywith">Pay with one of the credit cards listed below</string>
+
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="billing">Billing</string>
+    <string name="expirationdate">Expiration Date</string>
+    <string name="securitycode">Security Code</string>
+    <string name="billingaddsame">Billing address is the same as shipping address</string>
+    <string name="backtogeneticreport">Back to genetic reports</string>
+    <string name="thankyouforyourpurchase">Thank you for your purchase. We have sent\nthis to our network physician for approval.\nOnce approved, your sample kit will be sent.</string>
+    <string name="shippingaddres">Shipping address</string>
+    <string name="summary">Summary</string>
+    <string name="someadd1">555 Some St.</string>
+    <string name="someadd2">San Diego, CA 92121</string>
+    <string name="set">Set</string>
+    <string name="cancel">cancle</string>
+
+    <!-- Spinner Firs Elem-->
+    <string-array name="Year">
+        <item>Year</item>
+    </string-array>
+
+    <string-array name="Month">
+        <item>Month</item>
+    </string-array>
+
+    <string-array name="country">
+        <item>Country</item>
+    </string-array>
+</resources>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_register"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_register">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:background="@drawable/camlink" />
+
+            <LinearLayout
+                android:id="@+id/ln1"
+                android:layout_height="@dimen/ed_full_height"
+                android:layout_width="fill_parent"
+                android:layout_below="@id/logo"
+                android:layout_marginTop="@dimen/divider_margin_top"
+                android:orientation="horizontal">
+
+                <com.andreabaccega.widget.FormEditText
+
+                    whatever:testType="nocheck"
+                    android:id="@+id/fname"
+                    android:layout_marginRight="@dimen/ed_bw_margin"
+
+                    android:paddingLeft="@dimen/ed_text_padding"
+                    android:textSize="@dimen/heading1_text"
+                    android:hint="@string/fname"
+                    android:textColorHint="@color/cwhite"
+                    android:tag="Helvetica Neue.Regular.TTF"
+                    android:background="@drawable/rounded_rectangle_3_copy_3_register"
+                    android:textColor="@color/cwhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <com.andreabaccega.widget.FormEditText
+
+                whatever:testType="email"
+                android:id="@+id/email"
+                android:background="@drawable/rounded_rectangle_3_copy_4_register"
+                android:tag="Helvetica Neue.Regular.TTF"
+                android:paddingLeft="@dimen/ed_text_padding"
+                android:layout_centerVertical="true"
+
+                android:textSize="@dimen/heading1_text"
+                android:hint="@string/onlyemail"
+                android:textColorHint="@color/cwhite"
+                android:textColor="@color/cwhite"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/ed_full_height"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/ln1" />
+            <com.andreabaccega.widget.FormEditText
+
+                whatever:testType="nocheck"
+                android:id="@+id/password"
+                android:background="@drawable/rounded_rectangle_3_copy_4_register"
+                android:tag="Helvetica Neue.Regular.TTF"
+                android:paddingLeft="@dimen/ed_text_padding"
+                android:layout_centerVertical="true"
+                android:hint="@string/pass"
+                android:textColorHint="@color/cwhite"
+                android:textSize="@dimen/heading1_text"
+                android:textColor="@color/cwhite"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/ed_full_height" android:inputType="textPassword"
+                android:layout_below="@id/email"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"/>
+
+
+
+            <com.andreabaccega.widget.FormEditText
+                android:inputType="textPassword"
+                whatever:testType="nocheck"
+                android:id="@+id/cnfpassword"
+                android:background="@drawable/rounded_rectangle_3_copy_4_register"
+                android:tag="Helvetica Neue.Regular.TTF"
+                android:paddingLeft="@dimen/ed_text_padding"
+                android:layout_centerVertical="true"
+                android:hint="@string/cpass"
+                android:textColorHint="@color/cwhite"
+                android:textSize="@dimen/heading1_text"
+                android:textColor="@color/cwhite"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/ed_full_height"
+                android:layout_below="@id/password"
+                android:layout_marginTop="@dimen/divider_margin_top"/>
+
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/error_pass_label"
+                android:tag="Helvetica Neue.Medium.TTF"
+                android:gravity="center"
+                android:text="@string/error2"
+                android:textSize="@dimen/small2_text"
+                android:textColor="@color/cerror"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/divider_margin_top"
+                android:layout_below="@id/cnfpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <LinearLayout
+                android:id="@+id/ln2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/error_pass_label"
+                android:layout_marginTop="@dimen/divider_margin_top"
+                android:layout_marginBottom="@dimen/divider_margin_top"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tickbox_image_selector"
+                    android:thumb="@android:color/transparent"
+                    android:track="@android:color/transparent"
+
+                    android:id="@+id/switch_agree" />
+
+                <TextView
+                    android:textStyle="normal"
+                    android:tag="Helvetica Neue.Light.TTF"
+                    android:id="@+id/stay_login_for"
+                    android:text="@string/iagree"
+                    android:textSize="14sp"
+                    android:textColor="@color/cwhite"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:textStyle="normal"
+
+                    android:tag="Helvetica Neue.Light.TTF"
+                    android:id="@+id/ln2_text_bold"
+                    android:text="@string/term"
+                    android:textSize="14sp"
+                    android:textColor="@color/cwhite"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+            <Button
+
+                android:gravity="center"
+                android:id="@+id/reg_btn"
+                android:layout_below="@+id/ln2"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:tag="Helvetica Neue.Light.TTF"
+                android:layout_centerVertical="true"
+                android:text="@string/register"
+                android:textSize="@dimen/heading1_text"
+                android:background="@drawable/rounded_rectangle_3_copy_2_register"
+                android:textColor="@color/cwhite"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:tag="Helvetica Neue.Light.TTF"
+                android:id="@+id/alrdysign_txt"
+                android:text="@string/already_reg"
+                android:textSize="@dimen/heading1_text"
+                android:textColor="@color/cblue"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/divider_margin_top"
+                android:layout_below="@+id/reg_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_register"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_alignParentTop="true"
+                android:id="@+id/txt_ome2"
+
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/logo_margin_top"
+                android:layout_weight="1"
+                android:background="@drawable/camlink" />
+
+            <LinearLayout
+                android:id="@+id/loginforgot_forgtpass_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ed_top_margin"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/ln1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/forgot_text_error"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/divider_margin_top"
+                        android:layout_marginTop="@dimen/divider_margin_top"
+                        android:gravity="center"
+                        android:tag="Helvetica Neue.Medium.TTF"
+                        android:text="@string/loginforgot_error"
+                        android:textColor="@color/cerror"
+                        android:textSize="@dimen/small2_text"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/loginforgot_email"
+                        android:layout_width="@dimen/ed_full_width"
+                        android:layout_height="@dimen/ed_full_height"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/divider_margin_top"
+                        android:layout_marginTop="@dimen/divider_margin_top"
+                        android:background="@drawable/rounded_rectangle_3_copy_4_register"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="@dimen/drawable_padding"
+                        android:tag="Helvetica Neue.Regular.TTF"
+                        android:text="@string/email"
+                        android:textColor="@color/cwhite"
+                        android:textSize="@dimen/heading1_text" />
+
+
+                    <Button
+                        android:id="@+id/loginforgot_resetbtn"
+                        android:layout_width="@dimen/ed_full_width"
+                        android:layout_height="@dimen/ed_full_height"
+                        android:layout_below="@+id/ln2"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/divider_margin_top"
+                        android:background="@drawable/rounded_rectangle_3_copy_2_register"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:tag="Helvetica Neue.Light.TTF"
+                        android:text="@string/send"
+                        android:textColor="@color/cwhite"
+                        android:textSize="@dimen/heading1_text"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/loginforgot_ihavepin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/divider_margin_top"
+                    android:baselineAlignBottom="true"
+                    android:tag="Helvetica Neue.Light.TTF"
+                    android:text="@string/i_have_a_pin"
+                    android:textColor="@color/cblue"
+                    android:textSize="@dimen/heading1_text"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/loginforgot_ihavepin_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/divider_margin_top"
+                android:layout_marginRight="@dimen/divider_margin_top"
+                android:visibility="gone"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/loginforgot_enterpin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/divider_margin_top"
+                    android:baselineAlignBottom="true"
+                    android:tag="Helvetica Neue.Light.TTF"
+                    android:text="@string/enter_pin_we_sent"
+                    android:textColor="@color/cblack"
+                    android:visibility="gone"
+                    android:textSize="@dimen/small2_text"
+                    android:textStyle="normal"/>
+
+                <LinearLayout
+                    android:id="@+id/loginforgot_ihavepin_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_margin="@dimen/divider_margin_top"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/loginforgot_ihavepin_pin1"
+                        android:layout_width="@dimen/ed_quad_width"
+                        android:layout_height="@dimen/ed_full_height"
+
+
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_rectangle_3_copy_4_register"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="10dp"
+                        android:tag="Helvetica Neue.Regular.TTF"
+
+                        android:textColor="@color/cwhite"
+                        android:textSize="@dimen/heading1_text" />
+
+                    <EditText
+                        android:id="@+id/loginforgot_ihavepin_pin2"
+                        android:layout_width="@dimen/ed_quad_width"
+                        android:layout_height="@dimen/ed_full_height"
+
+
+                        android:layout_marginRight="15dp"
+                        android:paddingLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_rectangle_3_copy_4_register"
+                        android:inputType="textEmailAddress"
+
+                        android:tag="Helvetica Neue.Regular.TTF"
+
+                        android:textColor="@color/cwhite"
+                        android:textSize="@dimen/heading1_text" />
+
+                    <EditText
+                        android:id="@+id/loginforgot_ihavepin_pin3"
+                        android:layout_width="@dimen/ed_quad_width"
+                        android:layout_height="@dimen/ed_full_height"
+
+
+                        android:layout_marginRight="15dp"
+                        android:paddingLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_rectangle_3_copy_4_register"
+                        android:inputType="textEmailAddress"
+
+                        android:tag="Helvetica Neue.Regular.TTF"
+
+                        android:textColor="@color/cwhite"
+                        android:textSize="@dimen/heading1_text" />
+
+                    <EditText
+                        android:id="@+id/loginforgot_ihavepin_pin4"
+                        android:layout_width="@dimen/ed_quad_width"
+                        android:layout_height="@dimen/ed_full_height"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_rectangle_3_copy_4_register"
+                        android:inputType="textEmailAddress"
+
+                        android:tag="Helvetica Neue.Regular.TTF"
+
+                        android:textColor="@color/cwhite"
+                        android:textSize="@dimen/heading1_text" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/login_text_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:tag="Helvetica Neue.Medium.TTF"
+                    android:text="@string/pin_dsnt_exist"
+                    android:textColor="#ee6025"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/loginforgot_ineedpin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/divider_margin_top"
+                    android:layout_marginTop="@dimen/divider_margin_top"
+                    android:baselineAlignBottom="true"
+                    android:tag="Helvetica Neue.Light.TTF"
+                    android:text="@string/i_need_new_pin"
+                    android:textColor="@color/cblue"
+                    android:textSize="@dimen/heading1_text"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:id="@+id/loginforgot_ihavepin_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/banner"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/loginforgot_ihavepin_newpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/ed_full_height"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/divider_margin_top"
+                        android:layout_marginTop="@dimen/divider_margin_top"
+                        android:background="@drawable/rounded_rectangle_3_copy_4_register"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="@dimen/drawable_padding"
+                        android:tag="Helvetica Neue.Regular.TTF"
+                        android:text="@string/new_pass"
+
+                        android:textColor="@color/cwhite"
+                        android:textSize="@dimen/heading1_text"  />
+
+                    <EditText
+                        android:id="@+id/loginforgot_ihavepin_cnfirmpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/ed_full_height"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/divider_margin_top"
+                        android:layout_marginTop="@dimen/divider_margin_top"
+                        android:background="@drawable/rounded_rectangle_3_copy_4_register"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="@dimen/drawable_padding"
+                        android:tag="Helvetica Neue.Regular.TTF"
+                        android:text="@string/confirm_pass"
+
+                        android:textColor="@color/cwhite"
+                        android:textSize="@dimen/heading1_text" />
+
+                    <TextView
+                        android:id="@+id/loginforgot_ihavepin_cnfirm_text_error"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/divider_margin_top"
+                        android:layout_marginTop="@dimen/divider_margin_top"
+                        android:gravity="center"
+                        android:tag="Helvetica Neue.Medium.TTF"
+                        android:text="@string/pass_mustbe"
+                        android:textColor="@color/cerror"
+                        android:textSize="@dimen/small2_text"
+                        android:visibility="gone" />
+
+
+                    <Button
+                        android:id="@+id/loginforgot_ihavepin_save"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_full_height"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/divider_margin_top"
+                        android:layout_marginTop="@dimen/divider_margin_top"
+                        android:background="@drawable/rounded_rectangle_3_copy_2_register"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:tag="Helvetica Neue.Light.TTF"
+                        android:text="@string/save"
+                        android:textColor="@color/cwhite"
+                        android:textSize="@dimen/heading1_text"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/loginforgot_backtologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ln1"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/menu_divider_left_margin"
+                android:baselineAlignBottom="true"
+                android:tag="Helvetica Neue.Light.TTF"
+                android:text="@string/back_to_login"
+                android:textColor="@color/cblue"
+                android:textSize="@dimen/heading1_text"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

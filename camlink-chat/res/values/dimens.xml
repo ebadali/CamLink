@@ -1,0 +1,68 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navig_size">20dp</dimen>
+    <dimen name="emptydimen">0dp</dimen>
+
+    <dimen name="menu_icon_width">35dp</dimen>
+    <dimen name="menu_icon_height">35dp</dimen>
+
+    <dimen name="ed_left_margin">30dp</dimen>
+    <dimen name="ed_right_margin">30dp</dimen>
+
+    <dimen name="menu_row_text_left_margin">20dp</dimen>
+
+    <dimen name="menu_divider_left_margin">60dp</dimen>
+    <dimen name="menu_divider_top_margin">30dp</dimen>
+
+    <dimen name="menu_row_left_margin">10dp</dimen>
+    <dimen name="menu_row_right_margin">10dp</dimen>
+    <dimen name="menu_row_top_margin">8dp</dimen>
+    <dimen name="menu_row_bottom_margin">8dp</dimen>
+
+    <!--Text Sizes-->
+
+    <dimen name="main_text">18sp</dimen>
+    <dimen name="heading1_text">16sp</dimen>
+    <dimen name="small2_text">12sp</dimen>
+    <!-- -->
+
+    <dimen name="btn_half_width">150dp</dimen>
+    <dimen name="btn_half_height">40dp</dimen>
+    <dimen name="btn_quad_height">20dp</dimen>
+
+
+    <dimen name="btn_full_width">300dp</dimen>
+    <dimen name="btn_full_height">60dp</dimen>
+
+    <dimen name="toolbar_height">40dp</dimen>
+    <dimen name="heading1_text_bottom_margin">10dp</dimen>
+    <dimen name="drawable_padding">10dp</dimen>
+    <dimen name="divider_margin_top">10dp</dimen>
+
+    <dimen name="ed_left_padding">20dp</dimen>
+    <dimen name="ed_right_padding">20dp</dimen>
+    <dimen name="ed_top_margin">30dp</dimen>
+    <dimen name="ed_bottom_margin">30dp</dimen>
+    <dimen name="pathway_logo_width">250dp</dimen>
+    <dimen name="pathway_logo_height">40dp</dimen>
+    <dimen name="ome_logo_width">100dp</dimen>
+    <dimen name="ome_logo_height">30dp</dimen>
+    <dimen name="logo_margin_top">30dp</dimen>
+
+    <dimen name="ed_full_width">350dp</dimen>
+    <dimen name="ed_full_height">60dp</dimen>
+    <dimen name="switch_full_width">30dp</dimen>
+    <dimen name="switch_full_height">30dp</dimen>
+    <dimen name="ed_quad_width">80dp</dimen>
+    <dimen name="ed_bw_margin">5dp</dimen>
+    <dimen name="ed_text_padding">10dp</dimen>
+    <dimen name="connected_report_width">300dp</dimen>
+    <dimen name="connected_report_height">250dp</dimen>
+    <dimen name="center_text_margin">20dp</dimen>
+    <dimen name="listview_height">250dp</dimen>
+    <dimen name="creditcard_height">110dp</dimen>
+
+
+</resources>

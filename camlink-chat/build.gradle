@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+
+repositories {
+    mavenCentral()
+    maven { url 'http://maven.stickerpipe.com/artifactory/stickerfactory' }
+    maven { url 'https://maven.fabric.io/public' }
+
+}
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.1.1'
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+    }
+    defaultConfig {
+        minSdkVersion 16
+        multiDexEnabled true
+
+
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile project(':pull-to-refresh')
+    compile('vc908.stickers:stickerfactory:0.2.2@aar') {
+        transitive = true;
+    }
+    compile('com.andreabaccega:android-form-edittext:1.2.1@aar') {
+        exclude module: 'design'
+    }
+    compile 'com.google.android.gms:play-services-gcm:7.5.0'
+    compile 'com.android.support:support-v4:22.2.0'
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.kbeanie:image-chooser-library:1.5.2@aar'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile files('libs/quickblox-android-sdk-chat-2.3.3.jar')
+    compile files('libs/quickblox-android-sdk-content-2.3.3.jar')
+    compile files('libs/quickblox-android-sdk-core-2.3.3.jar')
+    compile files('libs/quickblox-android-sdk-customobjects-2.3.3.jar')
+    compile files('libs/quickblox-android-sdk-messages-2.3.3.jar')
+    compile files('libs/quickblox-android-sdk-videochat-webrtc-2.3.3.jar')
+    compile project(':videochat-webrtc')
+    compile('com.crashlytics.sdk.android:crashlytics:2.2.2@aar') {
+        transitive = true;
+    }
+    compile files('libs/commons-net-3.4.jar')
+    compile files('libs/picasso-2.5.2.jar')
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:drawable="@drawable/tick_box_on_register" android:state_checked="true" android:state_pressed="true" />
+    <item android:drawable="@drawable/tick_box_on_register" android:state_checked="true" android:state_focused="false" />
+    <item android:drawable="@drawable/tick_box_off_register" android:state_checked="false" android:state_pressed="true" />
+    <item android:drawable="@drawable/tick_box_off_register" android:state_checked="false" android:state_focused="false" />
+
+</selector>

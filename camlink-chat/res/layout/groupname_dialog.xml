@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:whatever="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+
+    <com.andreabaccega.widget.FormEditText
+        android:gravity="center"
+        android:layout_gravity="center"
+        whatever:testType="nocheck"
+        whatever:emptyErrorString="This Field Cannot be Empty"
+        android:inputType="textEmailAddress"
+        android:id="@+id/group_text"
+        android:layout_width="@dimen/ed_full_width"
+        android:layout_height="@dimen/ed_full_height"
+        android:textColor="@color/cwhite"
+        android:layout_marginBottom="@dimen/divider_margin_top"
+        android:layout_marginTop="@dimen/divider_margin_top"
+        android:background="@drawable/rounded_rectangle_3_copy_4_register"
+        android:paddingLeft="@dimen/drawable_padding"
+        android:tag="Helvetica Neue.Regular.TTF"
+        android:hint="@string/entergroupname"
+        android:textColorHint="@color/cwhite"
+        android:textSize="@dimen/heading1_text" />
+
+    <Button
+        android:id="@+id/group_btn"
+        android:layout_width="@dimen/ed_full_width"
+        android:layout_height="@dimen/btn_full_height"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_rectangle_3_copy_2_register"
+        android:clickable="true"
+        android:gravity="center"
+        android:tag="Helvetica Neue.Light.TTF"
+        android:text="SET"
+        android:textColor="@color/cwhite"
+        android:textSize="@dimen/heading1_text" />
+
+</LinearLayout>

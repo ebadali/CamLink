@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_register"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:textColor="@color/cblue"
+        android:text="Select users to chat"
+        android:textSize="20sp" />
+
+    <Button
+
+        android:background="@drawable/arrow_copy_3_layer_5c_back"
+        android:gravity="center_vertical"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+
+        android:layout_alignParentRight="true"
+        android:textColor="@color/cblue"
+        android:id="@+id/createChatButton" />
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/usersList"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ptr:ptrMode="pullFromEnd" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

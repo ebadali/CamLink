@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:chat="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_add"
+        android:title="New Chat"
+        android:icon="@drawable/ic_action_new"
+        chat:showAsAction="ifRoom" />
+    <item android:id="@+id/action_changepic"
+        android:title="Chanage Pic"
+        android:icon="@drawable/profile_icon"
+        chat:showAsAction="ifRoom" />
+    <item android:id="@+id/action_call"
+        android:title="Call"
+        android:icon="@drawable/ic_call"
+        chat:showAsAction="ifRoom" />
+    <item android:id="@+id/action_logout"
+        android:title="Log Out"
+        android:icon="@drawable/log_out_icon"
+        chat:showAsAction="ifRoom" />
+</menu>
