@@ -318,7 +318,6 @@ public class ChatActivity extends BaseActivity implements KeyboardHandleRelative
     }
 
 
-
     private void initViews() {
         messagesContainer = (ListView) findViewById(R.id.messagesContainer);
         messageEditText = (EditText) findViewById(R.id.messageEdit);
@@ -336,13 +335,13 @@ public class ChatActivity extends BaseActivity implements KeyboardHandleRelative
             container.removeView(companionLabel);
         } else if (dialog.getType() == QBDialogType.PRIVATE) {
             Integer opponentID = ChatService.getInstance().getOpponentIDForPrivateDialog(dialog);
-             QBRoster chatRoster = QBChatService.getInstance().getRoster(QBRoster.SubscriptionMode.mutual, new QBSubscriptionListener() {
+            QBRoster chatRoster = QBChatService.getInstance().getRoster(QBRoster.SubscriptionMode.mutual, new QBSubscriptionListener() {
                 @Override
                 public void subscriptionRequested(int userID) {
 
                 }
             });
-            String online =  "";
+            String online = "";
             QBPresence presence = chatRoster.getPresence(opponentID);
             if (presence == null) {
                 // No user in your roster
@@ -351,10 +350,10 @@ public class ChatActivity extends BaseActivity implements KeyboardHandleRelative
 
             if (presence.getType() == QBPresence.Type.online) {
                 // User is online
-                online =  "Online: ";
+                online = "Online: ";
             } else {
                 // User is offline
-                online =  "Offline: ";
+                online = "Offline: ";
             }
             companionLabel.setText(ChatService.getInstance().getDialogsUsers().get(opponentID).getLogin());
         }
@@ -430,7 +429,7 @@ public class ChatActivity extends BaseActivity implements KeyboardHandleRelative
     private void sendChatMessage(String messageText, QBAttachment file) {
         QBChatMessage chatMessage = new QBChatMessage();
 
-        chatMessage.setProperty("status","online");
+        chatMessage.setProperty("status", "online");
         chatMessage.setProperty(PROPERTY_SAVE_TO_HISTORY, "1");
         chatMessage.setDateSent(new Date().getTime() / 1000);
         if (file != null) {
@@ -743,7 +742,7 @@ public class ChatActivity extends BaseActivity implements KeyboardHandleRelative
     public void DownloadFile(QBChatMessage item) {
 
 
-        item.getAttachments();
+        //item.getAttachments();
         int someId = -1;
         String fileName = "";
         for (QBAttachment attch : item.getAttachments()) {
@@ -753,7 +752,6 @@ public class ChatActivity extends BaseActivity implements KeyboardHandleRelative
             } catch (Exception ex) {
             }
             break;
-
         }
         // Download file with ID 126
         if (someId == -1)
@@ -768,14 +766,19 @@ public class ChatActivity extends BaseActivity implements KeyboardHandleRelative
                 Log.i(TAG, "File Downloading");
 
                 // Get the directory for the app's private pictures directory.
-
-                String root = Environment.getExternalStorageDirectory().toString();// cntx.getExternalFilesDir(Environment.DIRECTORY_PICTURES).toString();
-                File myDir = new File(root + "/saved_images");
-                myDir.mkdirs();
-                File file = new File(myDir, finalFileName);
-                if (file.exists()) file.delete();
-
-                new DownloadTask(file).execute(inputStream);
+                if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
+                    String root = Environment.getExternalStorageDirectory().toString();// cntx.getExternalFilesDir(Environment.DIRECTORY_PICTURES).toString();
+                    File myDir = new File(root + "/saved_images");
+                    myDir.mkdirs();
+                    File file = new File(myDir, finalFileName);
+                    if (file.exists()) file.delete();
+                    new DownloadTask(file).execute(inputStream);
+                } else
+                    Toast.makeText(
+                            cntx,
+                            "Failed to Download. You dont have mounted storage",
+                            Toast.LENGTH_LONG
+                    ).show();
 
 
             }
@@ -834,7 +837,7 @@ public class ChatActivity extends BaseActivity implements KeyboardHandleRelative
             // TODO: check this.exception
             // TODO: do something with the feed
             //+ mFile.getAbsolutePath()
-            final String status = flag ? "Completed "  : "Failed";
+            final String status = flag ? "Completed " : "Failed";
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
